@@ -1,14 +1,14 @@
 .main {
-	position: fixed;
-	top: 56px;
-	left: 0;
-	z-index: 100;
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	:nth-child(2) {
-		margin: 0 42.65px;
-	}
+  :nth-child(2) {
+    margin: 0 42px;
+  }
 }
