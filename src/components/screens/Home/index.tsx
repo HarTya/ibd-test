@@ -11,15 +11,18 @@ const Home: FC = () => {
     >
       <section className={styles.background}>
         <Image
+          draggable={false}
           src='/bg.png'
           alt='Background'
           fill
-          objectFit='cover'
+          style={{
+            userSelect: 'none',
+            objectFit: 'cover'
+          }}
           priority
           quality={100}
         />
       </section>
-      <h1>Home Page</h1>
     </Layout>
   )
 }

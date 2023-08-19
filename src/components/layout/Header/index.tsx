@@ -5,21 +5,32 @@ import styles from './Header.module.scss'
 const Header: FC = () => {
   return (
     <header className={styles.main}>
-      <Image src='/logo.svg' alt='Logo' width={277} height={60} priority />
       <Image
+        draggable={false}
+        src='/logo.svg'
+        alt='Website Logo'
+        width={277}
+        height={60}
+        style={{ userSelect: 'none' }}
+        priority
+      />
+      <Image
+        draggable={false}
         src='/ibd.logo.svg'
         alt='IBD Team Logo'
         width={97}
         height={60}
+        style={{ userSelect: 'none' }}
         priority
       />
       <Image
-        src='/alliance.logo.png'
+        draggable={false}
+        src='/alliance.logo.svg'
         alt='Cancer Alliance Logo'
         width={331}
         height={70}
+        style={{ userSelect: 'none' }}
         priority
-        quality={100}
       />
     </header>
   )

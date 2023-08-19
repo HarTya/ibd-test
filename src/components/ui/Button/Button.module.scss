@@ -1,0 +1,51 @@
+@import '@/styles/_variables.scss';
+
+.main {
+  cursor: pointer;
+  user-select: none;
+  max-width: 100%;
+  min-height: 50px;
+  padding: 10px 15px;
+  line-height: 25px;
+  font-size: $font_size-body;
+  font-weight: 500;
+  color: white;
+  background-color: $color-accent;
+  border: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.hover {
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-accent-dark;
+  }
+}
+
+.bordered {
+  font-size: $font_size-subheading;
+  opacity: 0.6;
+  color: black;
+  background-color: transparent;
+  border: 2px solid $color-accent;
+  transition:
+    opacity 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.selected {
+  opacity: 1;
+  color: white;
+  background-color: $color-accent-dark;
+  border-color: $color-accent-dark;
+}
