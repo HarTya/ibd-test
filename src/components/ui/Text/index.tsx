@@ -4,12 +4,12 @@ import styles from './Text.module.scss'
 import { IText } from './text.interface'
 
 const Text: FC<PropsWithChildren<IText>> = ({
-  children,
   size,
   weight,
   accent,
   translucent,
-  className
+  className,
+  children
 }) => {
   return (
     <span

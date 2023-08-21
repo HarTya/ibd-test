@@ -3,15 +3,31 @@
 .main {
   cursor: pointer;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   max-width: 100%;
   min-height: 50px;
-  padding: 10px 15px;
-  line-height: 25px;
+  padding: 9px 15px 8px 15px;
   font-size: $font_size-body;
   font-weight: 500;
   color: white;
+  line-height: 25px;
   background-color: $color-accent;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.arrow {
+  padding: 9px 27px 8px 56px;
+
+  svg {
+    margin-left: 21px;
+  }
 }
 
 .bold {
@@ -29,14 +45,14 @@
 .bordered {
   font-size: $font_size-subheading;
   opacity: 0.6;
-  color: black;
   background-color: transparent;
   border: 2px solid $color-accent;
+  color: black;
   transition:
     opacity 0.3s ease-in-out,
-    color 0.3s ease-in-out,
     background-color 0.3s ease-in-out,
-    border-color 0.3s ease-in-out;
+    border-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
 
   &:hover {
     opacity: 1;
@@ -45,7 +61,7 @@
 
 .selected {
   opacity: 1;
-  color: white;
   background-color: $color-accent-dark;
   border-color: $color-accent-dark;
+  color: white;
 }

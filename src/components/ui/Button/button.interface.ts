@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes } from 'react'
 
 export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
-  width: number
+  arrow?: boolean
   bold?: boolean
   hover?: boolean
   bordered?: boolean

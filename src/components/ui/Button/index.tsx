@@ -4,13 +4,13 @@ import styles from './Button.module.scss'
 import { IButton } from './button.interface'
 
 const Button: FC<PropsWithChildren<IButton>> = ({
-  children,
-  width,
+  arrow,
   bold,
   hover,
   bordered,
   selected,
   className,
+  children,
   ...rest
 }) => {
   return (
@@ -19,6 +19,7 @@ const Button: FC<PropsWithChildren<IButton>> = ({
       className={clsx(
         styles.main,
         {
+          [styles.arrow]: !bordered && arrow,
           [styles.bold]: !bordered && bold,
           [styles.hover]: bold && hover,
           [styles.bordered]: !bold && bordered,
@@ -27,12 +28,31 @@ const Button: FC<PropsWithChildren<IButton>> = ({
         className
       )}
     >
-      <style jsx>{`
-        button {
-          width: ${width}px;
-        }
-      `}</style>
       {children}
+      {arrow && (
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='28'
+          height='28'
+          viewBox='0 0 28 28'
+          fill='none'
+        >
+          <path
+            d='M5.83331 14H22.1666'
+            stroke='white'
+            strokeWidth='2.5'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+          <path
+            d='M14 5.83331L22.1667 14L14 22.1666'
+            stroke='white'
+            strokeWidth='2.5'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+          />
+        </svg>
+      )}
     </button>
   )
 }
