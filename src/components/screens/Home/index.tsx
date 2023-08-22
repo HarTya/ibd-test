@@ -29,52 +29,56 @@ const Home: FC = () => {
           quality={100}
         />
       </section>
-      <div className={styles.box}>
-        <Button arrow style={{ width: '350px' }}>
-          Пройти тестування
-        </Button>
-        <Button
-          bordered
-          selected={one}
-          onClick={() => setOne(!one)}
-          style={{ width: '350px' }}
-        >
-          Чоловіча
-        </Button>
-        <Button
-          bordered
-          selected={two}
-          onClick={() => setTwo(!two)}
-          style={{ width: '350px' }}
-        >
-          Жіноча
-        </Button>
-        <Button bold hover style={{ width: '273px' }}>
-          Продовжити
-        </Button>
-        <Button
-          bordered
-          selected={three}
-          onClick={() => setThree(!three)}
-          style={{ width: '175px' }}
-        >
-          Так
-        </Button>
-        <Button
-          bordered
-          selected={four}
-          onClick={() => setFour(!four)}
-          style={{ width: '175px' }}
-        >
-          Ні
-        </Button>
-        <Button bold hover style={{ width: '273px' }}>
-          Завершити тест
-        </Button>
-        <Button style={{ width: '350px' }}>Отримати діагностичну панель</Button>
-        <Button bold style={{ width: '437px' }}>
-          Зателефонуйте мені
-        </Button>
+      <div className={styles.content}>
+        <div className={styles.box}>
+          <Button arrow style={{ width: '350px' }}>
+            Пройти тестування
+          </Button>
+          <Button
+            bordered
+            selected={one}
+            onClick={() => setOne(!one)}
+            style={{ width: '350px' }}
+          >
+            Чоловіча
+          </Button>
+          <Button
+            bordered
+            selected={two}
+            onClick={() => setTwo(!two)}
+            style={{ width: '350px' }}
+          >
+            Жіноча
+          </Button>
+          <Button bold hover style={{ width: '273px' }}>
+            Продовжити
+          </Button>
+          <Button
+            bordered
+            selected={three}
+            onClick={() => setThree(!three)}
+            style={{ width: '175px' }}
+          >
+            Так
+          </Button>
+          <Button
+            bordered
+            selected={four}
+            onClick={() => setFour(!four)}
+            style={{ width: '175px' }}
+          >
+            Ні
+          </Button>
+          <Button bold hover style={{ width: '273px' }}>
+            Завершити тест
+          </Button>
+          <Button style={{ width: '350px' }}>
+            Отримати діагностичну панель
+          </Button>
+          <Button bold style={{ width: '437px' }}>
+            Зателефонуйте мені
+          </Button>
+        </div>
       </div>
     </Layout>
   )
