@@ -9,6 +9,7 @@ const Button: FC<PropsWithChildren<IButton>> = ({
   hover,
   bordered,
   selected,
+  text,
   className,
   children,
   ...rest
@@ -19,17 +20,20 @@ const Button: FC<PropsWithChildren<IButton>> = ({
       className={clsx(
         styles.main,
         {
-          [styles.arrow]: !bordered && arrow,
+          [styles.arrow]: !bordered && !text && arrow,
           [styles.bold]: !bordered && bold,
           [styles.hover]: bold && hover,
           [styles.bordered]: !bold && bordered,
-          [styles.selected]: bordered && selected
+          [styles.selected]: bordered && selected,
+          [styles.text]: !arrow && !hover && !bordered && text,
+          [styles.text_accent]:
+            !arrow && !hover && !bordered && text === 'accent'
         },
         className
       )}
     >
       {children}
-      {arrow && (
+      {!bordered && !text && arrow && (
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='28'

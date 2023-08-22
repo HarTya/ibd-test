@@ -6,4 +6,5 @@ export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   hover?: boolean
   bordered?: boolean
   selected?: boolean
+  text?: boolean | 'accent'
 }
