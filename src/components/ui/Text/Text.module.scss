@@ -26,4 +26,8 @@
 
 .translucent {
   opacity: 0.7;
+
+  &::selection {
+    background-color: rgba($color-accent-dark, 0.3);
+  }
 }

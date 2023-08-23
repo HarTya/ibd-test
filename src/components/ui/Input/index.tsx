@@ -17,7 +17,7 @@ const Input: FC<IInput> = ({
       className={clsx(
         styles.main,
         {
-          [styles.text]: text
+          [styles.text]: text && text.length <= 2
         },
         className
       )}
@@ -28,7 +28,7 @@ const Input: FC<IInput> = ({
         value={state}
         onChange={event => setState(event.target.value)}
       />
-      {text && (
+      {text && text.length <= 2 && (
         <Text size='subheading' weight='medium' translucent>
           {text}
         </Text>
