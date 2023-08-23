@@ -3,37 +3,17 @@
 .background {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 3.733333333333333%;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
 
 .content {
-  position: fixed;
-  top: 126px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 126px;
+  width: 100dvw;
+  min-height: 100dvh;
+  padding: 182px 28px;
 }
-
-// &::-webkit-scrollbar {
-//   width: 2px;
-// }
-
-// &::-webkit-scrollbar-track {
-//   background: rgba($color-accent, 0.3);
-// }
-
-// &::-webkit-scrollbar-thumb {
-//   background: $color-accent;
-// }
-
-// &::-webkit-scrollbar-thumb:hover {
-//   background: $color-accent-dark;
-// }

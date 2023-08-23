@@ -19,5 +19,22 @@ a {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba($color-accent, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-accent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color-accent-dark;
+  }
 }

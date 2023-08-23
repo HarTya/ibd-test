@@ -1,5 +1,5 @@
 import Layout from '@/components/layout'
-import Text from '@/ui/Text'
+import Results from '@/ui/box/Results'
 import Image from 'next/image'
 import { FC } from 'react'
 import styles from './Home.module.scss'
@@ -25,9 +25,7 @@ const Home: FC = () => {
         />
       </section>
       <div className={styles.content}>
-        <Text size='heading' weight='bold'>
-          Content
-        </Text>
+        <Results />
       </div>
     </Layout>
   )

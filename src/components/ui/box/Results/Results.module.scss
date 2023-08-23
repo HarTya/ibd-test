@@ -1,0 +1,33 @@
+@import '@/styles/_variables.scss';
+
+.main {
+  position: relative;
+  width: 1054px;
+  max-width: 100%;
+  height: 566px;
+  padding: 43px 51px 68px;
+  background: white;
+  box-shadow:
+    0px 3.2653627395629883px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02),
+    0px 7.84712028503418px 5.32008171081543px 0px rgba(0, 0, 0, 0.03),
+    0px 14.775431632995605px 10.017241477966309px 0px rgba(0, 0, 0, 0.04),
+    0px 26.356843948364258px 17.869047164916992px 0px rgba(0, 0, 0, 0.04),
+    0px 49.29758071899414px 33.422088623046875px 0px rgba(0, 0, 0, 0.05),
+    0px 118px 80px 0px rgba(0, 0, 0, 0.07);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    width: 1234px;
+    max-width: 100dvw;
+    height: 500px;
+    opacity: 0.6;
+    background-color: $color-accent;
+    border-radius: 100%;
+    filter: blur(250px);
+  }
+}
