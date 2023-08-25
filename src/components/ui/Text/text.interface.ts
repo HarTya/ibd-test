@@ -1,7 +1,15 @@
-export interface IText {
+import { HTMLAttributes } from 'react'
+
+export interface IParagraph extends HTMLAttributes<HTMLParagraphElement> {
   size: 'heading' | 'subheading' | 'body'
   weight: 'medium' | 'bold'
   accent?: boolean
   translucent?: boolean
-  className?: string
+}
+
+export interface ISpan extends HTMLAttributes<HTMLSpanElement> {
+  size: 'heading' | 'subheading' | 'body'
+  weight: 'medium' | 'bold'
+  accent?: boolean
+  translucent?: boolean
 }

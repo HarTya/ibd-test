@@ -1,10 +1,10 @@
-import Text from '@/ui/Text'
+import { Paragraph } from '@/ui/Text'
 import clsx from 'clsx'
 import { FC } from 'react'
 import styles from './Input.module.scss'
 import { IInput } from './input.interface'
 
-const Input: FC<IInput> = ({
+TODO: const Input: FC<IInput> = ({
   state,
   setState,
   text,
@@ -29,9 +29,9 @@ const Input: FC<IInput> = ({
         onChange={event => setState(event.target.value)}
       />
       {text && text.length <= 2 && (
-        <Text size='subheading' weight='medium' translucent>
+        <Paragraph size='subheading' weight='medium' translucent>
           {text}
-        </Text>
+        </Paragraph>
       )}
     </div>
   )

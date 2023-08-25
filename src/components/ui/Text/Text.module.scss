@@ -1,15 +1,23 @@
 @import '@/styles/_variables.scss';
 
+.paragraph {
+  max-width: 100%;
+  white-space: pre-line;
+}
+
 .heading {
   font-size: $font_size-heading;
+  line-height: 54px;
 }
 
 .subheading {
   font-size: $font_size-subheading;
+  line-height: 33px;
 }
 
 .body {
   font-size: $font_size-body;
+  line-height: 28px;
 }
 
 .medium {
@@ -25,9 +33,11 @@
 }
 
 .translucent {
-  opacity: 0.7;
+  &_black {
+    color: rgba(black, 0.7);
+  }
 
-  &::selection {
-    background-color: rgba($color-accent-dark, 0.3);
+  &_accent {
+    color: rgba($color-accent, 0.7);
   }
 }

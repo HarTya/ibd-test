@@ -3,7 +3,7 @@
 .background {
   position: fixed;
   top: 0;
-  right: 3.733333333333333%;
+  right: 71.68px;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -16,4 +16,10 @@
   width: 100dvw;
   min-height: 100dvh;
   padding: 182px 28px;
+}
+
+@media screen and (max-width: 1669px) {
+  .background {
+    right: 0;
+  }
 }

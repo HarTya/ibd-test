@@ -4,7 +4,6 @@
   position: relative;
   width: 1054px;
   max-width: 100%;
-  height: 566px;
   padding: 43px 51px 68px;
   background: white;
   box-shadow:
@@ -30,4 +29,30 @@
     border-radius: 100%;
     filter: blur(250px);
   }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.status {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px auto 34px;
+}
+
+.message {
+  width: 347px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 23.5px;
+  border-bottom: 2px solid rgba($color-accent, 0.6);
+  margin: 0 auto 41.5px;
 }
