@@ -5,6 +5,7 @@ export interface IParagraph extends HTMLAttributes<HTMLParagraphElement> {
   weight: 'medium' | 'bold'
   accent?: boolean
   translucent?: boolean
+  width?: number
 }
 
 export interface ISpan extends HTMLAttributes<HTMLSpanElement> {

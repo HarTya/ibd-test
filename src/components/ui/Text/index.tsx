@@ -8,6 +8,7 @@ const Paragraph: FC<PropsWithChildren<IParagraph>> = ({
   weight,
   accent,
   translucent,
+  width,
   className,
   children,
   ...rest
@@ -30,6 +31,11 @@ const Paragraph: FC<PropsWithChildren<IParagraph>> = ({
         className
       )}
     >
+      <style jsx>{`
+        p {
+          width: ${width ? `${width}px` : 'auto'};
+        }
+      `}</style>
       {children}
     </p>
   )

@@ -7,69 +7,70 @@ import styles from './Results.module.scss'
 const Results: FC = () => {
   return (
     <div className={styles.main}>
-      <Paragraph size='heading' weight='bold' style={{ marginBottom: '10px' }}>
-        Перехопи{' '}
-        <Span size='heading' weight='bold' accent>
-          рак
-        </Span>
-      </Paragraph>
-      <Paragraph
-        size='body'
-        weight='medium'
-        translucent
-        style={{ width: '809px', marginBottom: '65px' }}
-      >
-        На ранніх стадіях раку людина може не відчувати жодних симптомів. Тому
-        так важливо виявити захворювання на ранньому етапі.
-      </Paragraph>
+      <div className={styles.title}>
+        <Paragraph size='heading' weight='bold'>
+          Перехопи{' '}
+          <Span size='heading' weight='bold' accent>
+            рак
+          </Span>
+        </Paragraph>
+      </div>
+      <div className={styles.subtitle}>
+        <Paragraph size='body' weight='medium' translucent width={809}>
+          На ранніх стадіях раку людина може не відчувати жодних симптомів. Тому
+          так важливо виявити захворювання на ранньому етапі.
+        </Paragraph>
+      </div>
       <div className={styles.content}>
-        <div style={{ width: '251px' }}>
-          <div className={styles.status}>
-            <Paragraph
-              size='body'
-              weight='medium'
-              translucent
-              style={{ lineHeight: '22px', textAlign: 'center' }}
-            >
-              ≈{'\n'}
-              <Span
+        <div className={styles.info}>
+          <div>
+            <div className={styles.status}>
+              <Paragraph
                 size='body'
                 weight='medium'
                 translucent
-                style={{ lineHeight: '22px' }}
+                style={{ lineHeight: '22px', textAlign: 'center' }}
               >
-                ?
-              </Span>
+                ≈{'\n'}
+                <Span
+                  size='body'
+                  weight='medium'
+                  translucent
+                  style={{ lineHeight: '22px' }}
+                >
+                  ?
+                </Span>
+              </Paragraph>
+            </div>
+            <Paragraph size='subheading' weight='medium'>
+              КРР ризик (рівень)
             </Paragraph>
           </div>
-          <Paragraph size='subheading' weight='medium'>
-            КРР ризик (рівень)
-          </Paragraph>
-        </div>
-        <div style={{ width: '219.5px' }}>
-          <div className={styles.status}>
-            <Paragraph
-              size='body'
-              weight='medium'
-              translucent
-              style={{ lineHeight: '22px', textAlign: 'center' }}
-            >
-              %{'\n'}
-              <Span
+          <div>
+            <div className={styles.status}>
+              <Paragraph
                 size='body'
                 weight='medium'
                 translucent
-                style={{ lineHeight: '22px' }}
+                style={{ lineHeight: '22px', textAlign: 'center' }}
               >
-                ?
-              </Span>
+                %{'\n'}
+                <Span
+                  size='body'
+                  weight='medium'
+                  translucent
+                  style={{ lineHeight: '22px' }}
+                >
+                  ?
+                </Span>
+              </Paragraph>
+            </div>
+            <Paragraph size='subheading' weight='medium'>
+              Індекс маси тіла
             </Paragraph>
           </div>
-          <Paragraph size='subheading' weight='medium'>
-            Індекс маси тіла
-          </Paragraph>
         </div>
-        <div style={{ width: '350px' }}>
+        <div>
           <div className={styles.message}>
             <Image
               draggable={false}

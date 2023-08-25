@@ -31,28 +31,44 @@
   }
 }
 
+.title {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 65px;
+}
+
 .content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 350px);
+  padding-right: 66px;
+}
+
 .status {
-  width: 200px;
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 200px;
+  height: 200px;
   margin: 3px auto 34px;
 }
 
 .message {
-  width: 347px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  width: 347px;
   padding-bottom: 23.5px;
   border-bottom: 2px solid rgba($color-accent, 0.6);
-  margin: 0 auto 41.5px;
+  margin: 0 1.5px 41.5px;
 }
